@@ -53,3 +53,28 @@ for i in range(n):
 
 
 g.prim_mst()
+"""Enter the number of thermal power stations: 6
+Enter the cost of electrification for each connection:
+Enter the cost between thermal station 0 and 1: 3
+Enter the cost between thermal station 0 and 2: 0
+Enter the cost between thermal station 0 and 3: 0
+Enter the cost between thermal station 0 and 4: 6
+Enter the cost between thermal station 0 and 5: 3
+Enter the cost between thermal station 1 and 2: 1
+Enter the cost between thermal station 1 and 3: 6
+Enter the cost between thermal station 1 and 4: 0
+Enter the cost between thermal station 1 and 5: 4
+Enter the cost between thermal station 2 and 3: 6
+Enter the cost between thermal station 2 and 4: 0
+Enter the cost between thermal station 2 and 5: 4
+Enter the cost between thermal station 3 and 4: 1
+Enter the cost between thermal station 3 and 5: 5
+Enter the cost between thermal station 4 and 5: 2
+Thermal Station -- Connected to --> Thermal Station Cost
+ 1 -- 0 3
+ 2 -- 1 1
+ 3 -- 4 1
+ 4 -- 5 2
+ 5 -- 0 3
+ """
+ 
