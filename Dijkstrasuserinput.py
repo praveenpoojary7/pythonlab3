@@ -102,40 +102,4 @@ Enter the start node: A
 Enter the destination node: E
 Optimal route: ['A', 'C', 'D', 'E']
 """
-                min_distance = distances[neighbor]
-        if next_node is None or next_node in route:
-            return None
-        node = next_node
-    route.append(start)
-    route.reverse()
-    return route
-
-def get_graph_from_user():
-    graph = {}
-    while True:
-        node = input("Enter a node (or 'done' if finished): ").strip().upper()
-        if node == 'DONE':
-            break
-        connections = {}
-        while True:
-            neighbor = input(f"Enter a neighbor node for '{node}' (or 'done' if finished): ").strip().upper()
-            if neighbor == 'DONE':
-                break
-            weight = int(input(f"Enter the weight between '{node}' and '{neighbor}': "))
-            connections[neighbor] = weight
-        graph[node] = connections
-    return graph
-
-# Example usage
-graph = get_graph_from_user()
-print("Entered graph:")
-print(graph)
-
-start = input("Enter the start node: ").strip().upper()
-destination = input("Enter the destination node: ").strip().upper()
-
-optimal_route = find_optimal_route(graph, start, destination)
-if optimal_route is None:
-    print("No route exists.")
-else:
-    print("Optimal route:", optimal_route)
+             
