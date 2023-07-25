@@ -50,7 +50,7 @@ def solve_n_queen(N):
                 print()
             print()
 
-N=4
+N=int(input("enter the no of queens:"))
 solve_n_queen(N)
 """
 . . Q . 
